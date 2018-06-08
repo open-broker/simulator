@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "49045f4595c8672a5a856faef4de45a7c333bdb405736f0be75050e9d6a26aa9"
+            "sha256": "4e1c96aefd6fe4f3c6386a0375a7dc3bc7215024b4dd612d2d3b57fbefe56708"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -47,6 +47,13 @@
                 "sha256:f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b"
             ],
             "version": "==6.7"
+        },
+        "cloudevents-python": {
+            "hashes": [
+                "sha256:6e9d8d81d05005b813e29e4136cbfe09009772fbc42d3bc26894cd1a5703cbf6",
+                "sha256:5f054bceafd03da99f561da9c497ef4aadd923c79d3f3dc968604089611b635a"
+            ],
+            "version": "==0.2.0"
         },
         "flask": {
             "hashes": [

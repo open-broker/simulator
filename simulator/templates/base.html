@@ -1,0 +1,9 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - playground</title>
+<nav>
+  <a href="/">root</a>
+  <a href="{% block up %}{% endblock %}">up<a/>
+</nav>
+<section class="content">
+  {% block content %}{% endblock %}
+</section>

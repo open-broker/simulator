@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block up %}/{% endblock %}
+
+{% block content %}
+<form method="POST" action="/send" target="__blank">
+  <p>
+    Origin:
+    <input type="text" name="origin" placeholder="origin" />
+  </p>
+  <p>
+    Destination:
+    <input type="text" name="destination" placeholder="Destination URL" />
+  </p>
+  <textarea name="data" cols=60 rows=20></textarea>
+  <input type=submit />
+</form>
+
+<nav>
+{% for link in links %}
+  <a href="{{ link.href }}">{{ link.title }}</a>
+{% endfor %}
+</nav>
+{% endblock %}

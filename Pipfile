@@ -9,6 +9,7 @@ name = "pypi"
 
 flask = "*"
 requests = "*"
+cloudevents-python = "*"
 
 
 [dev-packages]

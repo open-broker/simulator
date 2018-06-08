@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block up %}{{ up }}{% endblock %}
+
+{% block content %}
+{% for e in events %}
+<div>
+  <p>
+    {{ e.event_type }} {{ e.content_type }}
+  </p>
+  <pre>
+    {{ event_to_json(e) }}
+  </pre>
+  ---
+</div>
+{% else %}
+<p>No events found</p>
+{% endfor %}
+{% endblock %}
